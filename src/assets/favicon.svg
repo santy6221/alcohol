@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8C583"/>
+      <stop offset="100%" stop-color="#C17A45"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: dark walnut circle -->
+  <circle cx="32" cy="32" r="32" fill="#1C140F"/>
+  <circle cx="32" cy="32" r="29.5" fill="none" stroke="#3A2C21" stroke-width="1"/>
+
+  <!-- Martini glass -->
+  <g>
+    <!-- Bowl -->
+    <path d="M14 15 L32 35 L50 15 Z" fill="none" stroke="url(#glassGrad)" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- Liquid fill in the bowl -->
+    <path d="M19 19.5 L45 19.5 L32 33 Z" fill="url(#glassGrad)" opacity="0.6"/>
+    <!-- Stem -->
+    <line x1="32" y1="35" x2="32" y2="47" stroke="#C17A45" stroke-width="4.2" stroke-linecap="round"/>
+    <!-- Base -->
+    <line x1="21" y1="47" x2="43" y2="47" stroke="#C17A45" stroke-width="4.2" stroke-linecap="round"/>
+    <!-- Olive garnish -->
+    <circle cx="39" cy="20" r="3.4" fill="#8FA35E"/>
+    <line x1="39" y1="20" x2="46" y2="12" stroke="#D9B26B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
