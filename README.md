@@ -1,16 +1,81 @@
-# React + Vite
+# Cóctel Codex
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Una app de catálogo de cócteles hecha con React + Vite. Permite buscar tragos, filtrar por categoría y explorar recetas con información de ingredientes e instrucciones.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Proyecto desplegado en GitHub Pages:
 
-## React Compiler
+https://santy6221.github.io/alcohol/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funcionalidades
 
-## Expanding the Oxlint configuration
+- Búsqueda por nombre de cóctel
+- Filtro por categoría
+- Opción de selección aleatoria
+- Vista detallada con ingredientes e instrucciones
+- Traducción al español para textos de la UI y receta
+- Diseño oscuro estilo barra / catálogo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Tecnologías
+
+- React
+- Vite
+- JavaScript
+- TheCocktailDB API
+- Lucide React
+
+## Requisitos
+
+- Node.js 18+
+- npm
+
+## Instalación
+
+```bash
+npm install
+```
+
+## Ejecutar en local
+
+```bash
+npm run dev
+```
+
+La app quedará disponible en el puerto por defecto de Vite, normalmente:
+
+```text
+http://localhost:5173/
+```
+
+## Build de producción
+
+```bash
+npm run build
+```
+
+## Deploy a GitHub Pages
+
+1. Asegurate de tener el repositorio creado en GitHub.
+2. Ejecuta:
+
+```bash
+npm run deploy
+```
+
+Este comando genera la carpeta `dist` y la publica con `gh-pages`.
+
+## Estructura principal
+
+```text
+src/
+  App.jsx
+  App.css
+  main.jsx
+public/
+  ...
+```
+
+## Nota
+
+La aplicación consume datos desde TheCocktailDB y usa una API de traducción para mostrar recetas en español cuando corresponde.

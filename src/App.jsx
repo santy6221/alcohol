@@ -450,6 +450,102 @@ export default function CocktailCodex() {
           gap: 18px;
         }
 
+        @media (max-width: 700px) {
+          .codex-root {
+            padding: 20px 12px 44px;
+          }
+          .codex-header {
+            margin-bottom: 20px;
+          }
+          .codex-eyebrow {
+            letter-spacing: 0.12em;
+            font-size: 9px;
+            margin-bottom: 14px;
+          }
+          .codex-title {
+            font-size: clamp(30px, 11vw, 42px);
+            margin-bottom: 14px;
+          }
+          .codex-sub {
+            font-size: 13px;
+            line-height: 1.5;
+            padding: 0 6px;
+          }
+          .codex-controls {
+            grid-template-columns: 1fr;
+            max-width: 100%;
+            gap: 8px;
+            margin-top: 18px;
+          }
+          .codex-search,
+          .codex-select,
+          .codex-shuffle,
+          .codex-lang-toggle-header {
+            width: 100%;
+          }
+          .codex-search input,
+          .codex-select,
+          .codex-shuffle,
+          .codex-lang-toggle-header button {
+            min-height: 44px;
+          }
+          .codex-shuffle {
+            justify-content: center;
+            font-size: 13px;
+          }
+          .codex-lang-toggle-header {
+            padding: 4px;
+          }
+          .codex-lang-toggle-header button {
+            flex: 1;
+            padding: 8px 10px;
+          }
+          .codex-grid {
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 22px;
+          }
+          .codex-card {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            min-height: 110px;
+          }
+          .codex-card img {
+            width: 110px;
+            min-width: 110px;
+            height: 100%;
+            min-height: 110px;
+            border-right: 1px solid var(--border);
+            border-bottom: none;
+          }
+          .codex-card-body {
+            padding: 10px 12px;
+            gap: 6px;
+          }
+          .codex-card-name {
+            font-size: 18px;
+          }
+          .codex-card-tag {
+            white-space: normal;
+            letter-spacing: 0.04em;
+          }
+          .codex-overlay {
+            padding: 12px 8px;
+          }
+          .codex-ticket {
+            max-width: 100%;
+          }
+          .codex-ticket-inner {
+            padding: 8px 16px 24px;
+          }
+          .codex-ticket-name {
+            font-size: 22px;
+          }
+          .codex-ticket-meta {
+            font-size: 10px;
+          }
+        }
+
         .codex-card {
           background: var(--bg-panel);
           border: 1px solid var(--border);
